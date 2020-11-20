@@ -1,0 +1,11 @@
+
+function box(p) {
+  box-shadow: sadfs;
+  -webkit-box-shadow: sadfs;
+  -moz-box-shadow: p;
+  -ms-box-shadow: p;
+}
+
+a {
+  box(asdfasdd);
+}
