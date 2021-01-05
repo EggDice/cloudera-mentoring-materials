@@ -1,0 +1,5 @@
+print('hello')
+
+Program('hello.c')
+
+Program('greet.c')

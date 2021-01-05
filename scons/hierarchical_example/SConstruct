@@ -1,0 +1,5 @@
+variable = 4
+
+Export('variable')
+
+SConscript('folder/SConscript')

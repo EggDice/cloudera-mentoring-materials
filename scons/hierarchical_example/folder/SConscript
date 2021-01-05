@@ -1,0 +1,5 @@
+Import('variable')
+
+print(variable)
+
+print('hello form the folder')

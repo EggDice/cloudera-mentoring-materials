@@ -1,0 +1,9 @@
+import os
+
+print(os.environ['YEAR'])
+
+env = Environment(ENV = os.environ)
+
+print(env.Dictionary())
+
+Zip('archive', ['SConstruct'])

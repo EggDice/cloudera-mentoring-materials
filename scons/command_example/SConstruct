@@ -1,0 +1,15 @@
+
+env = Environment()
+
+listing = env.Command('#/debug.log', [], 'ls -la')
+env.Alias('listing', listing)
+
+pwd = env.Command('#/debug2.log', [], 'pwd')
+env.Alias('pwd', pwd)
+
+def greeting(target, source, env):
+    print('Hello from the function')
+
+greet = env.Command('#/debug3.log', 'listing', greeting)
+env.Alias('greeting', greet)
+env.Alias('all', ['greeting', 'pwd'])
